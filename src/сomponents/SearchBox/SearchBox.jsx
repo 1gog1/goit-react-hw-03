@@ -1,11 +1,9 @@
-import css from "../SearchBox/SearchBox.module.css";
-
+import css from "./SearchBox.module.css";
 
 export default function SearchBox({ value, onChange }) {
-
-const handleChange = (event) => {
-  onChange(event.target.value);
-};
+  const handleChange = (event) => {
+    onChange(event.target.value);
+  };
 
   return (
     <div className={css.SearchBox}>
